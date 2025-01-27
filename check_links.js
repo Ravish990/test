@@ -25,14 +25,15 @@ async function run() {
       }
     });
 
-    Promise.all(promises).then(() => {
-      if (allLinksValid) {
-        console.log('All links are valid!');
-        process.exit(0); 
-      } else {
-        process.exit(1);
-      }
-    });
+    await Promise.all(promises);
+
+    if (allLinksValid) {
+      console.log('All links are valid!');
+      process.exit(0); // Exit without error
+    } else {
+      console.error('Broken links detected. Aborting commit.');
+      process.exit(1); // Exit with error
+    }
   });
 }
 
