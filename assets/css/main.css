@@ -1,0 +1,94 @@
+/* General styles */
+
+.hidden {
+
+	display: none;
+}
+
+.instructions-text {
+
+	color: grey;
+	font-style: italic;
+}
+
+/* Bootstrap styles */
+
+.container-fluid {
+		
+	padding: 0;
+}
+
+.row {
+
+	margin: 1em;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+/* Annotation page styles */
+
+.annotation-card {
+
+	margin-bottom: 1em;
+}
+
+.annotation-tab-nav {
+
+	margin-bottom: 1em;
+	opacity: 0.5;
+}
+
+.annotation-tab-nav.active{
+
+	opacity: 1.0;
+}
+
+/* Category palette */
+
+.category-style-1 {
+
+	background-color: rgb(164,208,90) !important;
+	color: black !important;
+}
+.category-style-2 {
+	
+	background-color: rgb(127,23,167) !important;
+	color: white !important;
+}
+.category-style-3 {
+	
+	background-color: rgb(70,76,174) !important;
+	color: white !important;		
+}
+.category-style-4 {
+	
+	background-color: rgb(236,197,50) !important;
+	color: black !important;
+}
+.category-style-5 {
+	
+	background-color: rgb(128,1,1) !important;
+	color: white !important;	
+}
+
+.category-style-6 {
+	
+	background-color: rgb(23, 155, 207) !important;
+	color: black !important;
+}
+
+.category-style-default {
+	
+	background-color: white;
+	color: black;
+}
+
+.category-transparent {
+
+	opacity: 0.5;
+}
+
+.category-opaque {
+
+	opacity: 1.0;
+}

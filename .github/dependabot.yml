@@ -1,0 +1,30 @@
+# Documentation
+# https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+version: 2
+updates:
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    labels:
+      - "_bot"
+      - "dependencies"
+
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    ignore:
+      - dependency-name: 'nuxt'
+        update-types: ["version-update:semver-major"]
+      - dependency-name: 'vue'
+        update-types: ["version-update:semver-major"]
+      - dependency-name: 'webpack'
+        update-types: ["version-update:semver-major"]
+      - dependency-name: 'bootstrap'
+        update-types: ["version-update:semver-major"]
+      - dependency-name: 'braces'
+        update-types: ["version-update:semver-major"]
+    labels:
+      - "_bot"
+      - "dependencies"
