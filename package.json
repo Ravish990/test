@@ -43,7 +43,7 @@
     "eslint-plugin-cypress": "^3.6.0",
     "eslint-plugin-vue": "^9.32.0",
     "glob": "^8.0.3",
-    "husky": "^8.0.3",
+    "husky": "^9.1.7",
     "linkinator": "^2.14.5",
     "lint-staged": "^15.4.1",
     "push-dir": "^0.4.1"
